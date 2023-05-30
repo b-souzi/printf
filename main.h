@@ -24,6 +24,8 @@ int print_percent(va_list l);
 int print_int(va_list l);
 void print_number(int n);
 int count_digit(int i);
+char *convert(unsigned long int num, int base, int lowercase);
+int print_binary(va_list l);
 
 #endif
 
