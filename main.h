@@ -26,6 +26,10 @@ void print_number(int n);
 int count_digit(int i);
 char *convert(unsigned long int num, int base, int lowercase);
 int print_binary(va_list l);
+int print_unsigned(va_list l);
+int print_octal(va_list l);
+int print_hex(va_list l);
+int print_hex_big(va_list l);
 
 #endif
 

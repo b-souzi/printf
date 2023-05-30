@@ -14,9 +14,13 @@ int (*get_print(char s))(va_list)
 		{'%', print_percent},
 		{'d', print_int},
 		{'i', print_int},
-		{'b', print_binary}
+		{'b', print_binary},
+		{'u', print_unsigned},
+		{'o', print_octal},
+		{'x', print_hex},
+		{'X', print_hex_big}
 		};
-	int flags = 6;
+	int flags = 10;
 	int i;
 
 	for (i = 0; i < flags; i++)

@@ -57,3 +57,16 @@ int count_digit(int i)
 	}
 	return (nb);
 }
+
+/**
+ * print_unsigned - Prints an unsigned integer
+ * @l: va_list of arguments
+ * Return: Number of printed characters
+ */
+int print_unsigned(va_list l)
+{
+	unsigned int u = va_arg(l, unsigned int);
+	char *str = convert(u, 10, 0);
+
+	return (_puts(str));
+}
