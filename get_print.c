@@ -11,9 +11,11 @@ int (*get_print(char s))(va_list)
 	ph_t f_array[] = {
 		{'s', print_string},
 		{'c', print_char},
-		{'%', print_percent}
+		{'%', print_percent},
+		{'d', print_int},
+		{'i', print_int}
 		};
-	int flags = 3;
+	int flags = 5;
 	int i;
 
 	for (i = 0; i < flags; i++)

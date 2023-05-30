@@ -21,6 +21,9 @@ int print_char(va_list l);
 int _putchar(char c);
 int _puts(char *str);
 int print_percent(va_list l);
+int print_int(va_list l);
+void print_number(int n);
+int count_digit(int i);
 
 #endif
 
